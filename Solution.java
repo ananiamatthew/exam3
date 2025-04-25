@@ -6,6 +6,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Solution
 {
@@ -53,19 +54,22 @@ public class Solution
         return output;
     }
     // Added "import java.util.ArrayList"
+    // Changed "ArrayList<double>" to "ArrayList<Double>"
     // Fixed the "list.get()" parts
     // Moved the return and print statements out of the for loop
     
     /**
      * Q26) Use the max method from the Collections class to obtain the max temperature
-    
-    public static double maxTemperature(ArrayList<double> list = inputs[])
+     */
+    public static double maxTemperature(ArrayList<Double> list)
     {
-        double output = Collections.max(inputs[]);
+        double output = Collections.max(list);
         return output;
     }
+    // Added "import java.util.Collections"
+    // Changed "ArrayList<double>" to <ArrayList<Double>
     
-    
+    /**
      * Q27) Use the sort method from the Collections class to obtain the max temperature
     
     public static double maxTemperature(ArrayList<double> list = inputs[])
