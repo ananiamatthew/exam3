@@ -61,9 +61,9 @@ public class Solution
     /**
      * Q26) Use the max method from the Collections class to obtain the max temperature
      */
-    public static double maxTemperature1(ArrayList<Double> list)
+    public static Double maxTemperature1(ArrayList<Double> list)
     {
-        double output = Collections.max(list);
+        Double output = Collections.max(list);
         return output;
     }
     // Added "import java.util.Collections"
@@ -71,14 +71,14 @@ public class Solution
     
     /**
      * Q27) Use the sort method from the Collections class to obtain the max temperature
-    
-    public static double maxTemperature(ArrayList<double> list = inputs[])
+     *
+    public static Double maxTemperature2(ArrayList<Double> list)
     {
-        ArrayList tempList = new ArrayList <double>;
-        tempList = inputs.Collections.sort();
-        double output = tempList[tempList.length() - 1];
+        ArrayList temperatureList = new ArrayList <Double>();
+        temperatureList = list.Collections.sort();
+        Double output = temperatureList.get(temperatureList.size() - 1);
         return output;
     }
-    
+    // I'm not sure about this one
     */
 }
