@@ -23,16 +23,19 @@ public class Solution
     {
         String a = "Hello";
         String b = "Goodbye";
-        if (a.equals(b) = true) {
+        if (a.equals(b) == true) {
             System.out.println("They are equal.");
         } else {
             System.out.println("They are not equal.");
         }
     }
+    // Fixed the if statement, changed "= true" to "== true"
     
-    /**
+    /*
+    
+    
      * Q25) Outputs a list of temperatures over 37.5 and max temperature
-     */
+    
     public static ArrayList<double> feverCheck(ArrayList<double> list = inputs[])
     {
         double max = 0;
@@ -49,18 +52,18 @@ public class Solution
         }
     }
     
-    /**
+    
      * Q26) Use the max method from the Collections class to obtain the max temperature
-     */
+    
     public static double maxTemperature(ArrayList<double> list = inputs[])
     {
         double output = Collections.max(inputs[]);
         return output;
     }
     
-    /**
+    
      * Q27) Use the sort method from the Collections class to obtain the max temperature
-     */
+    
     public static double maxTemperature(ArrayList<double> list = inputs[])
     {
         ArrayList tempList = new ArrayList <double>;
@@ -68,4 +71,6 @@ public class Solution
         double output = tempList[tempList.length() - 1];
         return output;
     }
+    
+    */
 }
