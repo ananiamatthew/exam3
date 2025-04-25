@@ -61,7 +61,7 @@ public class Solution
     /**
      * Q26) Use the max method from the Collections class to obtain the max temperature
      */
-    public static double maxTemperature(ArrayList<Double> list)
+    public static double maxTemperature1(ArrayList<Double> list)
     {
         double output = Collections.max(list);
         return output;
