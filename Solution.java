@@ -4,6 +4,9 @@
  *
  * @author Matthew Anania
  */
+
+import java.util.ArrayList;
+
 public class Solution
 {
     // instance variables - replace the example below with your own
@@ -31,28 +34,29 @@ public class Solution
     }
     // Fixed the if statement, changed "= true" to "== true"
     
-    /*
-    
-    
+    /**
      * Q25) Outputs a list of temperatures over 37.5 and max temperature
-    
-    public static ArrayList<double> feverCheck(ArrayList<double> list = inputs[])
+     */
+    public static ArrayList<Double> feverCheck(ArrayList<Double> list)
     {
         double max = 0;
-        ArrayList output = new ArrayList<double>;
-        for (int i = 0; i < list.length(); i++) {
-            if (list[i] > 37.5) {
-                output[output.length()] = list[i];
+        ArrayList output = new ArrayList<Double>();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > 37.5) {
+                output.add(list.get(i));
             }
-            if (list[i] > max) {
-                max = list[i];
+            if (list.get(i) > max) {
+                max = list.get(i);
             }
-            System.out.println("Max = " + max);
-            return output;
         }
+        System.out.println("Max = " + max);
+        return output;
     }
+    // Added "import java.util.ArrayList"
+    // Fixed the "list.get()" parts
+    // Moved the return and print statements out of the for loop
     
-    
+    /**
      * Q26) Use the max method from the Collections class to obtain the max temperature
     
     public static double maxTemperature(ArrayList<double> list = inputs[])
